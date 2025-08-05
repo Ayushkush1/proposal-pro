@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
 import { FileText, Receipt, Plus, Eye, Calendar, DollarSign, Edit, TrendingUp, Users, Clock } from "lucide-react"
+import { format } from "date-fns"
 import ProposalForm from "@/components/proposal-form"
 import InvoiceForm from "@/components/invoice-form"
 import CompanySettings from "@/components/company-settings"
@@ -414,7 +415,7 @@ export default function HomePage() {
                             <div className="flex items-center space-x-2 mt-1">
                               <Calendar className="h-4 w-4 text-gray-400" />
                               <span className="text-sm text-gray-500">
-                                {new Date(doc.createdAt).toLocaleDateString()}
+                                {format(new Date(doc.createdAt), 'M/d/yyyy')}
                               </span>
                             </div>
                           </div>

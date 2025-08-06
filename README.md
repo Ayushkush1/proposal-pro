@@ -1,6 +1,26 @@
 # ProposalPro - Freelance Proposal Tool
 
-A modern web application for freelancers and agencies to create professional proposals, manage invoices, and streamline their business operations.
+A modern4. **Open your browser**
+   Navigate to `http://localhost:3000`
+
+## 🚀 Deployment
+
+This project is ready for deployment on Vercel:
+
+1. **Push to GitHub**
+   ```bash
+   git add .
+   git commit -m "Remove auth dependencies"
+   git push origin main
+   ```
+
+2. **Deploy to Vercel**
+   - Connect your GitHub repository to Vercel
+   - Vercel will automatically detect it's a Next.js project
+   - No environment variables needed
+   - Deploy with default settings
+
+## 📁 Project Structure application for freelancers and agencies to create professional proposals, manage invoices, and streamline their business operations.
 
 ## 🚀 Current Features
 
